@@ -41,7 +41,8 @@ The pipeline streams stock market data in real time, processes incoming records 
 
 <img width="1536" height="1024" alt="Architecture" src="https://github.com/user-attachments/assets/b83b013d-2077-4dd3-84d5-8551041c2a79" />
 
-Step-by-Step Workflow
+
+**Step-by-Step Workflow**
 
 **Step 1 — Real-Time Stock Data Ingestion**
 
@@ -159,9 +160,4 @@ Notifications can be sent through:
 * yFinance
 * Boto3
 
-
-
-Author
-Aman Yadav
-Cloud & Software Developer passionate about building scalable AWS-based real-time analytics systems.
 
