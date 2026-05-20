@@ -1,0 +1,34 @@
+Required SQL Queries:
+Run this SQL query to test:
+
+SELECT * FROM stock_data_table LIMIT 10;
+
+Find Top 5 Stocks with the Highest Price Change
+
+SELECT symbol, price, previous_close,
+       (price - previous_close) AS price_change
+FROM stock_data_table
+ORDER BY price_change DESC
+LIMIT 5;
+
+What does this query do?
+This query calculates the price change for each stock by subtracting yesterday’s closing price from the current price, creating a new column called price_change. It then sorts all stocks by this change in descending order and returns the top 5 stocks with the biggest price increase.
+
+Get Average Trading Volume Per Stock
+
+SELECT symbol, AVG(volume) AS avg_volume
+FROM stock_data_table
+GROUP BY symbol;
+
+What does this query do?
+This query groups all records by stock symbol and calculates the average trading volume for each stock using AVG(volume). The result shows how actively each stock is traded on average.
+
+Find Anomalous Stocks (Price Change > 2%)
+
+SELECT symbol, price, previous_close,
+       ROUND(((price - previous_close) / previous_close) * 100, 2) AS change_percent
+FROM stock_data_table
+WHERE ABS(((price - previous_close) / previous_close) * 100) > 2;
+
+What does this query do?
+This query calculates the percentage price change for each stock compared to its previous close and labels it as change_percent. It then filters and returns only those stocks whose price moved more than 5% up or down, identifying unusual or anomalous price movements.
