@@ -100,7 +100,7 @@ Services Used
 
 * Amazon S3
 
-**Step 5 — Historical Querying using Amazon Athena **
+**Step 5 — Historical Querying using Amazon Athena**
 
 Amazon Athena is used to run SQL queries directly on the stock data stored in S3.
 
@@ -115,7 +115,7 @@ Services Used
 * Amazon Athena
 
 
-**Step 6 — Data Visualization using Amazon QuickSight **
+**Step 6 — Data Visualization using Amazon QuickSight**
 
 Amazon QuickSight is connected with Athena datasets to build interactive dashboards and visual analytics for stock market trends.
 
